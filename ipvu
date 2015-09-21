@@ -219,7 +219,7 @@ texStart(){
 
 % Use like §\\todo{Hello World}§
 \\begin{document}
-\\todo{Grade: }
+\\todo[noline]{Grade: }
 EOF
 }
 
