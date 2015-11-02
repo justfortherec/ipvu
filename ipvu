@@ -215,11 +215,11 @@ texStart(){
     escapechar=§
 }
 \\setlength{\\marginparwidth}{5.5cm}
-\\usepackage[]{todonotes}
+\\usepackage[textsize=small]{todonotes}
 
 % Use like §\\todo{Hello World}§
 \\begin{document}
-\\todo[noline]{Grade: }
+\\todo[noline, size=\\large]{Grade: }
 EOF
 }
 
