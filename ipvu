@@ -404,7 +404,7 @@ collectFiles(){
 }
 
 gradeList(){
-	if [ ! $ARGUMENTS ]
+	if [ ! "$ARGUMENTS" ]
 	then
 		ARGUMENTS="*/*.tex"
 	fi
