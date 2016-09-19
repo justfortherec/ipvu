@@ -412,9 +412,9 @@ gradeList(){
 	grep \
 		-iIHr \
 		--exclude="$COMMAND" \
-		"\\todo\(\[noline, size=\\large\]\)*{Grade:" $ARGUMENTS \
+		"\\todo\(\[.*\]\)*{Grade:" $ARGUMENTS \
 	| sed \
-		"s/.*\([a-z][0-9]\)_\([a-z]\{3\}[0-9]\{3\}\).*tex:\\\\todo\\(\\[noline, size=\\\\large\\]\\)*{Grade:\s*\(.*\)}.*/Module: \1\tID: \2\tGrade: \4/" \
+		"s/.*\([a-z][0-9]\)_\([a-z]\{3\}[0-9]\{3\}\).*tex:\\\\todo\\(\\[.*\\]\\)*{Grade:\s*\(.*\)}.*/Module: \1\tID: \2\tGrade: \4/" \
 		--
 }
 
